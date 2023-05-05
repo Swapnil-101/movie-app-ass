@@ -8,6 +8,7 @@ import axios from "axios";
 
 //component
 import MovieCard from "@/components/Home/MovieCard";
+import Headers from "@/components/Home/Header"
 import Searchbox from "@/components/Home/Searchbox";
 
 const { publicRuntimeConfig } = getConfig();
@@ -34,6 +35,7 @@ const Home = () => {
 
   return (
     <Layout>
+      <Headers/>
       <div className="flex justify-center items-center mt-8 gap-4">
         <Searchbox
         // search={search}
@@ -50,6 +52,8 @@ const Home = () => {
                 title={itm?.show?.name}
                 imageUrl={itm?.show?.image?.medium}
                 rating={itm?.show?.rating?.average}
+                desc={itm?.show?.summary}
+
               />
             </Link>
           );

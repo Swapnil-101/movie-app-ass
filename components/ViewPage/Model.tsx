@@ -76,7 +76,6 @@ const Model: React.FC<Compo> = ({ moviename }) => {
                     placeholder="Enter your name"
                     name="name"
                     value={moviename}
-                    onChange={handleInputChange}
                   />
                 </div>
                 <div className="mb-4">

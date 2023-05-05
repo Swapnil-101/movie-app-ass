@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
+import Header from "@/components/Home/Header"
+
 //axios
 import axios from "axios";
 import Model from "./Model";
@@ -54,6 +56,7 @@ const ViewPageComponent: React.FC = () => {
     .replace(/<\/?b>/g, "");
   return (
     <div>
+      <Header/>
       <section>
         <div
           className="relative overflow-hidden bg-no-repeat bg-cover"
